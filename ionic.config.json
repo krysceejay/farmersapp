@@ -1,0 +1,8 @@
+{
+  "name": "farmapp",
+  "app_id": "0a649a29",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
