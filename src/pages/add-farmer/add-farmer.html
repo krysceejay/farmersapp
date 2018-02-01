@@ -1,0 +1,92 @@
+<!--
+  Generated template for the AddFarmerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Farmer</ion-title>
+
+    <ion-buttons end>
+        <button ion-button >
+            <ion-icon name="more" color="primary"></ion-icon>
+          </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <progress-bar [progress]="loadProgress"></progress-bar>
+
+    <ion-item>
+        <ion-label stacked>Crop Proficiency</ion-label>
+        <ion-select [(ngModel)]="gender">
+          <ion-option value="f">Female</ion-option>
+          <ion-option value="m">Male</ion-option>
+        </ion-select>
+      </ion-item>
+
+
+      <ion-item>
+          <ion-label stacked>Farm Location</ion-label>
+          <ion-select [(ngModel)]="farmlocation">
+            <ion-option value="f">Female</ion-option>
+            <ion-option value="m">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-row>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>State</ion-label>
+                    <ion-select [(ngModel)]="state">
+                      <ion-option value="f">abia</ion-option>
+                      <ion-option value="m">edo</ion-option>
+                    </ion-select>
+                  </ion-item>
+
+            </ion-col>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>LGA</ion-label>
+                    <ion-select [(ngModel)]="lga">
+                      <ion-option value="f">North</ion-option>
+                      <ion-option value="m">South</ion-option>
+                    </ion-select>
+                  </ion-item>
+
+            </ion-col>
+
+          </ion-row>
+
+          <ion-row>
+              
+              <ion-col col-8>
+                
+                      <button ion-button class="photo" full right><ion-icon name="camera" color="primary"></ion-icon>&nbsp; Take Photo</button>
+                      <button ion-button class="photo" full><ion-icon name="cloud-upload" color="primary"></ion-icon>&nbsp;Upload Photo</button>
+                      
+                  
+  
+              </ion-col>
+  
+            </ion-row>
+            <ion-row>
+                
+                <ion-col col-4 offset-8>
+                  
+                        <button ion-button class="next" full right>Next &nbsp; <ion-icon name="arrow-forward" color="primary"></ion-icon></button>
+                        
+                        
+                    
+    
+                </ion-col>
+    
+              </ion-row>
+
+</ion-content>

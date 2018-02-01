@@ -1,18 +1,109 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="light">
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="menu" color="primary"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title class="title">Dashboard</ion-title>
+    
+
+    <ion-buttons end>
+        <button ion-button >
+            <ion-icon name="more" color="primary"></ion-icon>
+          </button>
+    </ion-buttons>
+
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <ion-slides pager="false">
+        
+          <ion-slide >
+              <ion-card>
+                  <ion-card-header>
+                    Farmer
+                  </ion-card-header>
+                  <ion-card-content>
+                    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+        
+          <ion-slide >
+              <ion-card>
+                  <ion-card-header>
+                    Header
+                  </ion-card-header>
+                  <ion-card-content>
+                    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+        
+          <ion-slide >
+              <ion-card>
+                  <ion-card-header>
+                    Header
+                  </ion-card-header>
+                  <ion-card-content>
+                    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+        
+        </ion-slides>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+        <ion-row>
+            <ion-col>
+                <ion-card (click)="addFarmer()">
+                    <ion-card-header>
+                        <ion-icon  name="person-add"></ion-icon>
+                      </ion-card-header>
+                    <ion-card-content>
+                  
+                      Add Farmer
+                    </ion-card-content>
+                  </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-icon  name="people"></ion-icon>
+                      </ion-card-header>
+                    <ion-card-content>
+                      Farm Group
+                    </ion-card-content>
+                  </ion-card>
+            </ion-col>
+            
+          </ion-row>
+          <ion-row>
+              <ion-col>
+                  <ion-card>
+                      <ion-card-header>
+                          <ion-icon  name="chatboxes"></ion-icon>
+                        </ion-card-header>
+                      <ion-card-content>
+                        Farm Updates
+                      </ion-card-content>
+                    </ion-card>
+              </ion-col>
+              <ion-col>
+                  <ion-card>
+                      <ion-card-header>
+                          <ion-icon  name="calendar"></ion-icon>
+                        </ion-card-header>
+                      <ion-card-content>
+                        Operations Calendar
+                      </ion-card-content>
+                    </ion-card>
+              </ion-col>
+              
+            </ion-row>
+
+            
+            
+  
 </ion-content>

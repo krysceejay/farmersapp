@@ -1,0 +1,21 @@
+page-add-farmer {
+
+    ion-icon {
+        font-size: 30px;
+        //color: #fcfcfc;
+        text-align: center;
+      }
+
+      .photo,.next{
+          
+          background-color: #ffffff;
+          color: #919c24;
+          border: #919c24 solid 1px;
+          border-radius: 5px;
+      }
+
+      .next{
+        border-radius: 4px;
+        background-color: #f7f8e8;
+      }
+}
