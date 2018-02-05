@@ -3,7 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { AddFarmerTwoPage } from '../add-farmer-two/add-farmer-two';
 
 /**
- * Generated class for the AddFarmerPage page.
+ * Generated class for the AddFarmerThreePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,16 +11,16 @@ import { AddFarmerTwoPage } from '../add-farmer-two/add-farmer-two';
 
 
 @Component({
-  selector: 'page-add-farmer',
-  templateUrl: 'add-farmer.html',
+  selector: 'page-add-farmer-three',
+  templateUrl: 'add-farmer-three.html',
 })
-export class AddFarmerPage {
+export class AddFarmerThreePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddFarmerPage');
+    console.log('ionViewDidLoad AddFarmerThreePage');
   }
 
   addFarmerSecondpage(){

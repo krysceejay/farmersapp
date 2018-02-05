@@ -6,6 +6,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AddFarmerPage } from '../pages/add-farmer/add-farmer';
+import { AddFarmerTwoPage } from '../pages/add-farmer-two/add-farmer-two';
+import { AddFarmerThreePage } from '../pages/add-farmer-three/add-farmer-three';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +19,9 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     HomePage,
     ListPage,
     ProgressBarComponent,
-    AddFarmerPage
+    AddFarmerPage,
+    AddFarmerTwoPage,
+    AddFarmerThreePage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     MyApp,
     HomePage,
     ListPage,
-    AddFarmerPage
+    AddFarmerPage,
+    AddFarmerTwoPage,
+    AddFarmerThreePage
   ],
   providers: [
     StatusBar,
