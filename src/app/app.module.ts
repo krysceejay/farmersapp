@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { AddFarmerPage } from '../pages/add-farmer/add-farmer';
 import { AddFarmerTwoPage } from '../pages/add-farmer-two/add-farmer-two';
 import { AddFarmerThreePage } from '../pages/add-farmer-three/add-farmer-three';
+import { FarmGroupPage } from '../pages/farm-group/farm-group';
+import { FarmersListPage } from '../pages/farmers-list/farmers-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +23,9 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     ProgressBarComponent,
     AddFarmerPage,
     AddFarmerTwoPage,
-    AddFarmerThreePage
+    AddFarmerThreePage,
+    FarmGroupPage,
+    FarmersListPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     ListPage,
     AddFarmerPage,
     AddFarmerTwoPage,
-    AddFarmerThreePage
+    AddFarmerThreePage,
+    FarmGroupPage,
+    FarmersListPage
   ],
   providers: [
     StatusBar,

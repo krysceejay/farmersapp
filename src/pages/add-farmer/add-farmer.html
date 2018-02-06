@@ -23,8 +23,70 @@
 
     <progress-bar [progress]="loadProgress"></progress-bar>
 
+    Personal Details<hr>
+
     <ion-item>
-        <ion-label stacked>Crop Proficiency</ion-label>
+        <ion-label floating>First Name</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Last Name</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+
+        <ion-row>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label floating>Date of Birth</ion-label>
+                    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate">
+                    </ion-datetime>
+                  </ion-item>
+
+            </ion-col>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label floating>Gender</ion-label>
+                    <ion-select [(ngModel)]="gender">
+                      <ion-option value="f">North</ion-option>
+                      <ion-option value="m">South</ion-option>
+                    </ion-select>
+                  </ion-item>
+
+            </ion-col>
+
+          </ion-row>
+
+          <ion-item>
+              <ion-label floating>Phone number</ion-label>
+              <ion-input type="text" value=""></ion-input>
+            </ion-item>
+
+            <ion-row>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>Marital Status</ion-label>
+                        <ion-select [(ngModel)]="status">
+                          <ion-option value="f">abia</ion-option>
+                          <ion-option value="m">edo</ion-option>
+                        </ion-select>
+                      </ion-item>
+    
+                </ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>Number of Dependants</ion-label>
+                        <ion-select [(ngModel)]="denp">
+                          <ion-option value="f">North</ion-option>
+                          <ion-option value="m">South</ion-option>
+                        </ion-select>
+                      </ion-item>
+    
+                </ion-col>
+    
+              </ion-row>
+
+    <ion-item>
+        <ion-label floating>Crop Proficiency</ion-label>
         <ion-select [(ngModel)]="gender">
           <ion-option value="f">Female</ion-option>
           <ion-option value="m">Male</ion-option>
@@ -33,7 +95,7 @@
 
 
       <ion-item>
-          <ion-label stacked>Farm Location</ion-label>
+          <ion-label floating>Farm Location</ion-label>
           <ion-select [(ngModel)]="farmlocation">
             <ion-option value="f">Female</ion-option>
             <ion-option value="m">Male</ion-option>
@@ -43,7 +105,7 @@
         <ion-row>
             <ion-col col-6>
                 <ion-item>
-                    <ion-label stacked>State</ion-label>
+                    <ion-label floating>State</ion-label>
                     <ion-select [(ngModel)]="state">
                       <ion-option value="f">abia</ion-option>
                       <ion-option value="m">edo</ion-option>
@@ -53,7 +115,7 @@
             </ion-col>
             <ion-col col-6>
                 <ion-item>
-                    <ion-label stacked>LGA</ion-label>
+                    <ion-label floating>LGA</ion-label>
                     <ion-select [(ngModel)]="lga">
                       <ion-option value="f">North</ion-option>
                       <ion-option value="m">South</ion-option>
@@ -68,8 +130,8 @@
               
               <ion-col col-8>
                 
-                      <button ion-button class="photo" full outline><ion-icon name="camera" ></ion-icon>&nbsp; Take Photo</button>
-                      <button ion-button class="photo" full outline medium><ion-icon name="cloud-upload" ></ion-icon>&nbsp;Upload Photo</button>
+                      <button ion-button class="photo" full ><ion-icon name="camera" ></ion-icon>&nbsp; Take Photo</button>
+                      <button ion-button class="photo" full ><ion-icon name="cloud-upload" ></ion-icon>&nbsp;Upload Photo</button>
                       
                   
   
@@ -80,7 +142,7 @@
                 
                 <ion-col col-4 offset-8 >
                   
-                        <button ion-button class="next" full outline (click)="addFarmerSecondpage()">Next &nbsp; <ion-icon name="arrow-forward"></ion-icon></button>
+                        <button ion-button class="next" full (click)="addFarmerSecondpage()">Next &nbsp; <ion-icon name="arrow-forward"></ion-icon></button>
                         
                         
                     

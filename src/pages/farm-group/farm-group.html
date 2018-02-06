@@ -1,0 +1,76 @@
+<!--
+  Generated template for the FarmGroupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Farm Groups</ion-title>
+
+    <ion-buttons end>
+        <button ion-button >
+            <ion-icon name="more" color="primary"></ion-icon>
+          </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+    <ion-fab right bottom>
+        <button ion-fab (click)="addFarmGroup()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-fab>
+    <ion-row>
+        <ion-col col-6>
+            <ion-item>
+                <ion-label floating>Sort By</ion-label>
+                <ion-select [(ngModel)]="sort">
+                    <ion-option value="f">North</ion-option>
+                    <ion-option value="m">South</ion-option>
+                  </ion-select>
+              </ion-item>
+
+        </ion-col>
+        <ion-col col-6>
+            <ion-item>
+                <ion-label floating>Actions</ion-label>
+                <ion-select [(ngModel)]="action">
+                  <ion-option value="f">North</ion-option>
+                  <ion-option value="m">South</ion-option>
+                </ion-select>
+              </ion-item>
+
+        </ion-col>
+
+      </ion-row>
+
+      <ion-list>
+          <ion-item>
+              <ion-label>Daenerys Targaryen</ion-label>
+              <ion-checkbox color="dark"></ion-checkbox>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label>Arya Stark</ion-label>
+              <ion-checkbox color="dark"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Aminu</ion-label>
+                <ion-checkbox color="dark"></ion-checkbox>
+              </ion-item>
+              
+              <ion-item>
+                <ion-label>Olawale</ion-label>
+                <ion-checkbox color="dark"></ion-checkbox>
+              </ion-item>
+      </ion-list>
+
+</ion-content>

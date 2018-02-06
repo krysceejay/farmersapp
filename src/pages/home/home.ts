@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AddFarmerPage } from '../add-farmer/add-farmer';
+
+import { FarmGroupPage }from '../farm-group/farm-group';
+import { FarmersListPage } from '../farmers-list/farmers-list';
 
 @Component({
   selector: 'page-home',
@@ -12,8 +14,14 @@ export class HomePage {
 
   }
 
-  addFarmer(){
-    this.navCtrl.push(AddFarmerPage);
+ 
+
+  viewFarmGroup(){
+    this.navCtrl.push(FarmGroupPage);
+  }
+
+  viewFarmerList(){
+    this.navCtrl.push(FarmersListPage);
   }
 
 }

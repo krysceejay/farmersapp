@@ -18,6 +18,8 @@
 <ion-content padding>
     <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 
+   
+
     <ion-slides pager="false">
         
           <ion-slide >
@@ -54,16 +56,16 @@
 
         <ion-row>
             <ion-col>
-                <ion-card (click)="addFarmer()">
+                <ion-card (click)="viewFarmerList()">
                    
                     <ion-card-content>
-                        <ion-icon  name="person-add"></ion-icon><br/>
-                      Add Farmer
+                        <ion-icon  name="list"></ion-icon><br/>
+                      Farmers List
                     </ion-card-content>
                   </ion-card>
             </ion-col>
             <ion-col>
-                <ion-card>
+                <ion-card (click)="viewFarmGroup()">
                   
                     <ion-card-content>
                         <ion-icon  name="people"></ion-icon><br/>
